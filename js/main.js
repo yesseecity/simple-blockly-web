@@ -11,15 +11,16 @@ var demoWorkspace = Blockly.inject('frame-for-blockly',{
   }
 });
 
-function genCode () {
-  let code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
+function genCode() {
+  var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
   document.getElementById('code').innerText = code;
   localStorage.setItem('code', code);
 }
 
-function getXml() {
+function genXml() {
   var xml = Blockly.Xml.workspaceToDom(demoWorkspace);
   var xml_text = Blockly.Xml.domToPrettyText(xml);
+  // var xml_text = Blockly.Xml.domToText(xml);
   localStorage.setItem('xml_text', xml_text);
 }
 

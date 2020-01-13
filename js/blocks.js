@@ -5,7 +5,7 @@ Blockly.Blocks['my_block'] = {
     this.appendDummyInput()
         .appendField("下拉選單")
         .appendField(new Blockly.FieldDropdown([["option","OPTIONNAME"], ["option","OPTIONNAME"], ["option","OPTIONNAME"]]), "d1");
-    this.appendValueInput("input")
+    this.appendValueInput("NAME")
         .setCheck(null)
         .appendField("由方塊輸入值");
     this.setColour(230);
@@ -16,7 +16,7 @@ Blockly.Blocks['my_block'] = {
 
 Blockly.JavaScript['my_block'] = function(block) {
   var dropdown_d1 = block.getFieldValue('d1');
-  var value_input = Blockly.JavaScript.valueToCode(block, 'input', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
   var code = '...;\n';
   return code;
