@@ -1,0 +1,30 @@
+.main {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#frame-for-blockly {
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid gray;
+}
+.code {
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding:10px;
+}
+
+.buttons {
+  position: absolute;
+  top:0px;
+  left: 50%;
+}
